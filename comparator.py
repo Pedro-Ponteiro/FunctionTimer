@@ -75,8 +75,6 @@ class FunctionsTimer:
 
             arg_correspondents = [f"{arg_name}={arg}" for arg_name, arg in args.items()]
 
-            setup = ";".join(arg_correspondents)
-
             parameters = ",".join(arg_correspondents)
 
             globals()[func.__name__] = func
@@ -85,7 +83,6 @@ class FunctionsTimer:
 
             times = timeit.repeat(
                 stmt=func_str,
-                setup=setup,
                 globals=globals(),
                 repeat=repeat_times,
                 number=num_trials,
