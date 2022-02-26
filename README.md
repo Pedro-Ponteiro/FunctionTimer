@@ -1,6 +1,6 @@
 # FunctionTimer
 
-### Calculates and records python functions execution times for comparison
+### Calculates and records multiple python function's execution times for comparison
 
 
 Examples found at "examples.py" file.
