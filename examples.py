@@ -2,7 +2,7 @@ from pprint import pprint
 from random import shuffle
 from typing import List
 
-from comparator import Functions_Timer
+from comparator import FunctionsTimer
 
 
 def sorted_sol():
@@ -38,7 +38,7 @@ def set_with_params(a: List[int]):
 
 def main():
 
-    ft = Functions_Timer()
+    ft = FunctionsTimer()
 
     # example with function without params
     times = ft.time_funcs(
